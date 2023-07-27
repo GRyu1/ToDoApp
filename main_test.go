@@ -63,8 +63,3 @@ func TestCreateTodoHandler(t *testing.T) {
 	_, err := collection.InsertOne(context.Background(), todo)
 	assert.Nil(t, err)
 }
-
-func TestUpdateTodoHandler(t *testing.T) {
-	initMongoDB()
-
-}
